@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+
+:root {
+  --jewel: #4717f6;
+  --void: #0e0b16;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Elementos base*/
+body {
+  background: var(--void);
+  font-family: "Noto Sans", Times, serif;
+  color: white;
+}
+header div.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Noto Sans", Times, serif;
+}
+header .logo {
+  color: var(--jewel);
+  font-family: "Arial Black", Times;
+  font-size: 30px;
+  margin-left: 5px;
+}
+header nav a {
+  text-decoration: none;
+  color: #aaa;
+  margin-right: 10px;
+}
+header nav a:hover {
+  color: white;
+}
+header i {
+  color: #aaa;
+  margin-right: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+header i:hover {
+  color: white;
+}
+/*Filme principal*/
+
+.filme-principal {
+  font-size: 16px;
+  width: 100%;
+  background: linear-gradient(rgba(14, 11, 22, 0.5), rgba(14, 11, 22, 0.5) 100%),
+    url("../img/your-name.jpg");
+
+  height: 400px;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.filme-principal .descricao {
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-align: justify;
+}
+
+.filme-principal .titulo {
+  margin-top: 15%;
+  font-size: 50px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.botao {
+  background-color: rgba(0, 0, 0, 0.5); /*Deixa o background como gradiente*/
+  border: none;
+  color: white;
+
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+
+  font-size: 12px;
+  font-family: "Noto Sans", Times, serif;
+
+  cursor: pointer; /*Deixa o cursor como ponteiro*/
+  transition: 0.3s ease all; /*Transição de 3 segundos ao passar ponteiro em botão*/
+}
+
+.botao:hover {
+  background-color: var(--jewel);
+  color: white;
+}
+
+.botao i {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.container {
+  margin-left: 20px;
+}
+
+.filme-principal .container {
+  width: 70%;
+}
+.lancamentos {
+  font-family: "Noto Sans";
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.box-filme {
+  object-fit: cover;
+  max-height: 325px;
+  width: 200px;
+
+  border-radius: 2px;
+  display: block;
+
+  transition: 0.3s;
+}
+.box-filme:hover {
+  opacity: 40%;
+  cursor: pointer;
+}
+.carrossel-filmes {
+  margin: 25px 25px;
+}
+footer .logo {
+  color: var(--jewel);
+  font-family: "Arial Black", Times;
+  font-size: 30px;
+  margin-left: 5px;
+  margin-top: 30px;
+}
+footer div.empresa {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  font-family: "Noto Sans", Times, serif;
+  margin-right: 50px;
+  margin-top: 30px;
+}
+footer div.comunidade {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  font-family: "Noto Sans", Times, serif;
+  margin-right: 50px;
+  margin-top: 30px;
+}
+footer div.links {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  font-family: "Noto Sans", Times, serif;
+  margin-right: 50px;
+  margin-top: 30px;
+}
+footer .container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+footer h2 {
+  margin-bottom: 30px;
+}
+footer a {
+  text-decoration: none;
+  color: #aaa;
+  margin-bottom: 10px;
+}
+footer a:hover {
+  color: white;
+}
+
+footer .social-media {
+  display: flex;
+  flex-direction: row;
+  margin-right: 70px;
+  margin-top: 30px;
+}
+footer i {
+  color: #aaa;
+  margin-right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+}
+footer i:hover {
+  color: white;
+}
